@@ -1,0 +1,200 @@
+/* css boilerplate */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* here starts the main website */
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(150, 112, 74, 0.667);
+}
+#nav {
+  /* background-color: red; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 8%;
+  gap: 10px;
+  padding: 0 30px;
+}
+
+#nav h4 {
+  font-size: 20px;
+  margin: 0 10px;
+  font-weight: 400;
+  color: rgb(255, 247, 247);
+}
+#nav i {
+  font-size: 20px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* working on the centre part */
+#centre {
+  /* background-color: red; */
+  width: 100%;
+  height: 30%;
+  padding: 20px 0;
+}
+#centre h1 {
+  font-size: 8vh;
+  font-weight: 100;
+  margin: 0 100px;
+  line-height: 8vh;
+  color: white;
+}
+
+/* working on the center in part */
+#centre-in {
+  /* background-color: aquamarine; */
+  width: 100%;
+  height: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#centre-in p {
+  width: 50%;
+  padding-right: 20vw;
+  margin-left: 100px;
+  font-size: 2vh;
+  color: white;
+}
+#right {
+  width: 15%;
+  margin: 0 100px;
+}
+.elem {
+  padding: 10px 0px;
+  font-size: larger;
+  text-align: left;
+  border-top: 2px solid white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.elem a {
+  text-decoration: none;
+  color: white;
+  font-size: 2vh;
+}
+.elem i {
+  padding: 0 5px;
+  color: white;
+  opacity: 0;
+}
+
+.elem:hover {
+  background-color: rgb(206, 152, 91);
+  border-radius: 9px;
+}
+.elem:hover i {
+  opacity: 1;
+}
+/* working on the last part */
+#bottom {
+  width: 100%;
+  height: 37%;
+  background-image: url(./css01.jpg);
+  background-size: cover;
+  background-position: 0 70%;
+}
+
+@media (max-width: 600px) {
+  #nav {
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 8%;
+    gap: 5px;
+    padding: 0 15px;
+  }
+
+  #nav h4 {
+    font-size: 20px;
+    margin: 0 10px;
+    font-weight: 400;
+    color: rgb(255, 247, 247);
+  }
+  #nav i {
+    font-size: 20px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+  }
+
+  #centre {
+    /* background-color: red; */
+    width: 100%;
+    height: 30%;
+    padding: 30px 0;
+    padding-bottom: 0;
+  }
+  #centre h1 {
+    font-size: 5vh;
+    font-weight: 100;
+    margin: 0 50px;
+    line-height: 5vh;
+    color: white;
+  }
+  #centre-in {
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #centre-in p {
+    width: 50%;
+    padding-right: 0.3vw;
+    margin-left: 30px;
+    font-size: 1.4vh;
+    color: white;
+  }
+  #right {
+    width: 15%;
+    margin: 0 40px;
+  }
+  .elem {
+    padding: 5px 0px;
+
+    text-align: left;
+    border-top: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .elem a {
+    text-decoration: none;
+    color: white;
+    font-size: 1vh;
+  }
+  .elem i {
+    padding: 0 5px;
+    color: white;
+    opacity: 1;
+  }
+
+  .elem:hover {
+    background-color: rgb(206, 152, 91);
+    border-radius: 9px;
+  }
+  .elem:hover i {
+    opacity: 1;
+  }
+}
